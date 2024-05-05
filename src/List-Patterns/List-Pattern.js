@@ -1,8 +1,8 @@
 import { RegularList } from "./RegularList";
+import { NumberedList } from "./NumberedList";
 import { SmallPersonListItem } from "./people/SmallPersonList";
 import { LargePersonListItem } from "./people/LargePersonList";
 
-// Work support for Development
 const people = [
   {
     name: "John Doe",
@@ -150,7 +150,7 @@ export const ListPattern = () => {
       />
       <hr></hr>
       <h1>Large List Component</h1>
-      <RegularList
+      <NumberedList
         items={people}
         resourceName="person"
         itemComponent={LargePersonListItem}
